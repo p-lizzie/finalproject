@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        ZStack {
+            Image("homepage")
+            VStack {
+                Text("Alleviate")
+                Text("Daily Mood Tracker and Journal")
+                
+                
+            }
+
         
-        Text("Hello")
+        }
+       
+        
+
     }
 }
 
