@@ -14,20 +14,34 @@ struct ContentView: View {
             ZStack {
                 Image("homepage")
                 VStack(spacing: 30) {
-                    VStack(spacing: 5) {
+                    
+                    VStack() {
                         Text("Alleviate")
                             .fontWeight(.black)
                             .foregroundColor(Color("morningBlue"))
-                            .font(.largeTitle)
-                
-                        Text("Daily Mood Tracker and Journal")
-                            .font(.title2)
-                            .fontWeight(.medium)
+                            .font(.custom(
+                                "Chalkboard",
+                                fixedSize: 70))
+                            .padding(2)
+                        Text("Daily Mood Tracker")
+                                .font(.custom(
+                                    "AmericanTypewriter",
+                                    fixedSize: 25))
+                                .fontWeight(.medium)
+                                .foregroundColor(Color("morningBlue"))
+                            Text(" and Journal")
+                                .font(.custom(
+                                    "AmericanTypewriter",
+                                    fixedSize: 25))
+                                .fontWeight(.medium)
                             .foregroundColor(Color("morningBlue"))
+                        
+                        
                     }
+                    .padding(5)
                     
-                    VStack(spacing: 20) {
-                        NavigationLink(destination: dailyjournal()) {
+                    VStack(spacing: 30) {
+                        VStack{ NavigationLink(destination: dailyjournal()) {
                             Image("dailyjournalicon")
                                 .resizable(resizingMode: .stretch)
                                 .frame(width: 100.0, height: 100.0)
@@ -35,11 +49,14 @@ struct ContentView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .background(Circle()
                                     .frame(width: 120.0, height: 120.0)
-                                    .foregroundColor(Color("morningBlue")))
+                                    .foregroundColor(Color("x11Gray")))
+                            
                         }
-                        Text("Daily Journal")
-                            .font(.title3)
-                            .foregroundColor(Color("morningBlue"))
+                            Text("Daily Journal")
+                                .font(.custom(
+                                    "AmericanTypewriter",
+                                    fixedSize: 25))
+                            .foregroundColor(Color("morningBlue"))}
                         HStack(alignment: .bottom, spacing: 70) {
                             VStack(spacing: 30) {
                                 NavigationLink(destination: reflectingpastentries()) {
@@ -50,11 +67,13 @@ struct ContentView: View {
                                         .aspectRatio(contentMode: .fit)
                                         .background(Circle()
                                             .frame(width: 120.0, height: 120.0)
-                                            .foregroundColor(Color("morningBlue")))
+                                            .foregroundColor(Color("x11Gray")))
                                     
                                 }
                                 Text("Past Entries")
-                                    .font(.title3)
+                                    .font(.custom(
+                                        "AmericanTypewriter",
+                                        fixedSize: 25))
                                     .foregroundColor(Color("morningBlue"))
                                     .multilineTextAlignment(.center)
                             }
@@ -67,9 +86,11 @@ struct ContentView: View {
                                     .aspectRatio(contentMode: .fit)}
                                 .background(Circle()
                                     .frame(width: 120.0, height: 120.0)
-                                    .foregroundColor(Color("morningBlue")))
+                                    .foregroundColor(Color("x11Gray")))
                                 Text("Resources")
-                                    .font(.title3)
+                                    .font(.custom(
+                                        "AmericanTypewriter",
+                                        fixedSize: 25))
                                     .foregroundColor(Color("morningBlue"))
                                                                 }
                             
