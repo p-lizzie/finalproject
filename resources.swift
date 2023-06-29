@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-struct resources: View {
+struct calendar2: View {
     var body: some View {
-        
-              Text("Hello")
-            
+        NavigationStack {
+            ScrollView {
+                planner(interval: DateInterval(start: .distantPast, end: .distantFuture))
+            }
+                .navigationTitle("Calendar View")
         }
-        
     }
+}
 
-
-struct resources_Previews: PreviewProvider {
+struct calendar2_Previews: PreviewProvider {
     static var previews: some View {
-        resources()
+        calendar2()
     }
 }
