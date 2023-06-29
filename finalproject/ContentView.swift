@@ -20,7 +20,7 @@ struct ContentView: View {
                             .fontWeight(.black)
                             .foregroundColor(Color("morningBlue"))
                             .font(.custom(
-                                "Chalkboard",
+                                "AmericanTypewriter",
                                 fixedSize: 70))
                             .padding(2)
                         Text("Daily Mood Tracker")
