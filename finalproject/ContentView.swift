@@ -59,7 +59,7 @@ struct ContentView: View {
                             .foregroundColor(Color("morningBlue"))}
                         HStack(alignment: .bottom, spacing: 70) {
                             VStack(spacing: 30) {
-                                NavigationLink(destination: reflectingpastentries()) {
+                                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
                                     Image("calendaricon")
                                         .resizable(resizingMode: .stretch)
                                         .frame(width: 80.0, height: 80.0)
@@ -68,15 +68,21 @@ struct ContentView: View {
                                         .background(Circle()
                                             .frame(width: 120.0, height: 120.0)
                                             .foregroundColor(Color("x11Gray")))
-                                    
                                 }
+                                    
+                                
+                                
+
+                                   
+                                  
                                 Text("Past Entries")
                                     .font(.custom(
                                         "AmericanTypewriter",
                                         fixedSize: 25))
                                     .foregroundColor(Color("morningBlue"))
                                     .multilineTextAlignment(.center)
-                            }
+                                }
+                                    
                             VStack(spacing: 30) {
                                 NavigationLink(destination: resources()) {
                                     Image("tipsicon")
@@ -93,7 +99,10 @@ struct ContentView: View {
                                         fixedSize: 25))
                                     .foregroundColor(Color("morningBlue"))
                                                                 }
-                            
+
+                               
+                            }
+                                                        
                         }
                         
                         
@@ -133,4 +142,4 @@ struct ContentView: View {
             ContentView()
         }
     }
-}
+

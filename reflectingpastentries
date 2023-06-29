@@ -21,15 +21,16 @@ struct planner: UIViewRepresentable {
     func updateUIView(_ uiView: UICalendarView, context: Context) {
         
     }
-
-//struct reflectingpastentries: View {
+    
+    //struct reflectingpastentries: View {
     //var body: some View {
-       // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-  //  }
-//}
-
-//struct reflectingpastentries_Previews: PreviewProvider {
-  //  static var previews: some View {
+    // Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    //  }
+    //}
+    
+    //struct reflectingpastentries_Previews: PreviewProvider {
+    //  static var previews: some View {
     //    reflectingpastentries()
-   // }
-//}
+    // }
+    //}
+}
